@@ -1,252 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
-    <title>CSS滑动门导航菜单下载</title>
-    <style>
-        #top {
-            display: block;
-            text-align: left;
-            height: 105px;
-            position: relative;
-            z-index: 0;
-        }
-
-        .m {
-            margin: 0 auto;
-            width: 970px;
-        }
-
-        body {
-            font-size: 12px;
-        }
-
-        a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        a:link {
-            text-decoration: none;
-        }
-
-        a.blue:link,
-        a.blue:visited {
-            color: #014cc9;
-            text-decoration: none;
-        }
-
-        a.blue:hover,
-        a.blue:active {
-            color: #014cc9;
-            text-decoration: underline;
-        }
-
-        a.org:link,
-        a.org:visited {
-            color: #ff4e00;
-            text-decoration: none;
-        }
-
-        a:hover,
-        a:active,
-        a.org:hover,
-        a.org:active {
-            color: #ff4e00;
-            text-decoration: underline;
-        }
-
-        #navpart {
-            background: url(/jscss/demoimg/201002/navpartbg1.gif) repeat-x center top;
-            height: 105px;
-            width: 970px;
-            z-index: 0;
-            margin-top: 0;
-            margin-right: auto;
-            margin-bottom: 0;
-            margin-left: auto;
-            clear: both;
-            position: relative;
-        }
-
-        #navpart .sideleft {
-            background: url(/jscss/demoimg/201002/navpartbg1.gif) no-repeat left bottom;
-            float: left;
-            height: 105px;
-            width: 6px;
-        }
-
-        #navpart .sideright {
-            background: url(/jscss/demoimg/201002/navpartbg1.gif) no-repeat right bottom;
-            float: right;
-            height: 105px;
-            width: 6px
-        }
-
-        #navmenubar {
-            height: 32px;
-            float: left;
-            display: inline;
-            margin: 0 -6px;
-            width: 100%;
-            position: relative;
-            z-index: 3;
-            top: 0
-        }
-
-        #hot {
-            background: url(/jscss/demoimg/201002/sign_hot1.gif) no-repeat left top;
-            height: 21px;
-            width: 19px;
-            position: absolute;
-            top: -5px;
-            right: 2px;
-            z-index: 666
-        }
-
-        #navmenubar .sideleft {
-            background: url(/jscss/demoimg/201002/navmenubg1.gif) no-repeat left bottom;
-            float: left;
-            height: 32px;
-            width: 6px;
-            display: inline;
-            margin: 0 0 0 8px
-        }
-
-        #navmenubar .sideright {
-            background: url(/jscss/demoimg/201002/navmenubg1.gif) no-repeat right bottom;
-            float: left;
-            height: 32px;
-            width: 6px;
-            display: inline;
-            margin: 0 4px 0 -2px
-        }
-
-        /* NAVMENU */
-
-        #navmenubar .navmenu {
-            background: url(/jscss/demoimg/201002/navmenubg1.gif) repeat-x center top;
-            height: 32px;
-            padding: 0;
-            margin: 0;
-            float: left;
-            display: inline
-        }
-
-        #navmenubar .navmenu li {
-            float: left;
-            white-space: nowrap;
-            margin: 0px;
-            padding: 0px;
-            display: inline
-        }
-
-        #navmenubar .navmenu li a {
-            background: url(/jscss/demoimg/201002/navmenutabbg1.gif) no-repeat 0 0;
-            width: 80px;
-            padding: 7px 2px 5px 0;
-            float: left;
-            line-height: 20px;
-            height: 20px;
-            text-align: center
-        }
-
-        #navmenubar .navmenu li a:hover {
-            background-position: 0 -32px;
-            color: #602800;
-            text-decoration: none;
-            padding: 8px 2px 4px 0
-        }
-
-        #navmenubar .navmenu .current a,
-        #navmenubar .navmenu .current a:hover {
-            background: url(/jscss/demoimg/201002/navmenutabbg1.gif) no-repeat 0 -64px;
-            font-weight: 600;
-            color: #FFF;
-            font-size: 14px;
-            padding: 7px 2px 5px 0
-        }
-
-        #top #navpart .content {
-            margin-top: 0px;
-            margin-right: auto;
-            margin-bottom: 0px;
-            margin-left: auto;
-            width: 950px;
-            height: auto;
-        }
-
-        .clear {
-            clear: both;
-            display: block;
-            font: 0px/0 sans-serif;
-            height: 0px;
-            overflow: hidden;
-        }
-    </style>
+    <title>按钮</title>
 </head>
 
 <body>
-    <!--Header-->
-    <div id="top" class="m">
-        <div id="navpart">
-            <div class="sideleft"></div>
-            <div class="sideright"></div>
-            <!--NavMenu-->
-            <div id="navmenubar">
-                <div class="sideleft"></div>
-                <ul class="navmenu">
-                    <li class="current">
-                        <a href="#" target="_top" title="首页">源码首页</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>编程资源</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>高质量源码</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="sideright"></div>
-                <div class="sideleft"></div>
-                <ul class="navmenu">
-                    <li>
-                        <a href="#">
-                            <span>春节晚会</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>最新电影</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>视频王国</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>娱乐资讯</span>
-                        </a>
-                    </li>
-                </ul>
-                <div class="sideright"></div>
-                <div>
-                    <div class="content">
-                        <br />
-                        <br />
-                        <a href="#" target="_blank">欢迎您~</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <style type="text/css">
+        .nav {
+            overflow: hidden;
+            position: absolute;
+        }
+
+        .nav a {
+            margin: 0 2px;
+            float: left;
+            line-height: 24px;
+            text-decoration: none;
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ebeaea));
+            background: -moz-linear-gradient(top, #f4f4f4, #ebeaea);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f4f4f4, endColorstr=#ebeaea, grandientType=1);
+            border: solid 1px #cccdce;
+            color: #333;
+            font-weight: bold;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+        }
+
+        .nav a span {
+            display: inline-block;
+            padding: 0 22px;
+            border: solid 1px #fff;
+            cursor: pointer;
+        }
+
+        .nav a:hover {
+            text-decoration: none;
+            color: #fff;
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#ef2b10), to(#d91c02));
+            background: -moz-linear-gradient(top, #ef2b10, #d91c02);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ef2b10, endColorstr=#d91c02, grandientType=1);
+            border: solid 1px #ce2100;
+        }
+
+        .nav a:hover span {
+            border: solid 1px #fa6058;
+        }
+    </style>
+    <div class="nav">
+        <a href="#">
+            <span>首页</span>
+        </a>
+        <a href="#">
+            <span>网站首页</span>
+        </a>
+        <a href="#">
+            <span>网页特效</span>
+        </a>
+        <a href="#">
+            <span>超多脚本特效</span>
+        </a>
+        <a href="#">
+            <span>脚本之家提供精品脚本下载</span>
+        </a>
+        <a href="#">
+            <span>最新网页特效</span>
+        </a>
     </div>
-    <div class="clear"></div>
-    <!--END Header-->
 </body>
 
 </html>

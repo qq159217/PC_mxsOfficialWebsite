@@ -44,7 +44,7 @@ body {
 }
 
 .topNav .menu .item {
-    /* width: 66px; */
+    width: auto;
     height: 17px;
     font-size: 12px;
     float: left;
@@ -228,8 +228,8 @@ body {
     padding: 33px;
 }
 
-.section-05 .feedBack input {
-    display: block;
+.section-05 .feedBack textarea {
+    
     width: 100%;
     height: 200px;
     opacity: 0.11;
