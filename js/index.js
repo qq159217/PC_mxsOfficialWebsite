@@ -5,7 +5,7 @@ $(document).ready(function () {
     // verticalCentered: ture,
     scrollingSpeed: 800,
     // menu: false,
-    anchors: ['homePage', 'CompanyProfile', 'productDescription', 'joinCooperation', 'feedBack'],
+    anchors: ["homePage", "CompanyProfile", "productDescription", "joinCooperation", "feedBack", "connectCompany"],
     // menu: '#box',
     // loopBottom: true,
     // scrollOverflow: true,
