@@ -15,6 +15,7 @@ body {
 .container {
     /* max-width: ; */
     min-width: 960px;
+    overflow: hidden;
 }
 
 /* 导航栏样式 */
@@ -26,202 +27,369 @@ body {
     }
 }
 
-    .topNav {
-        width: 100%;
-        height: 68px;
-        color: #fff;
-        z-index: 800;
-        background-color: #fff;
-        /* background-color: blue; */
-    }
-    .topNav .menu a:hover {
-        color: #6db3fa;
-        display: block;
-        border-bottom: 5px solid #FF50E3C2;
-        text-align: center;
-    }
-    .topNav-fixed {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0
-    }
-    .topNav .menu .logo {
-        margin: 20px auto 0 36px;
-        float: left;
-    }
-    /* .topNav .menu .topNav ul li {
+.topNav {
+    width: 100%;
+    height: 68px;
+    color: #fff;
+    z-index: 800;
+    background-color: #fff;
+    /* background-color: blue; */
+}
+
+.topNav .menu a:hover {
+    color: #6db3fa;
+    display: block;
+    border-bottom: 5px solid #FF50E3C2;
+    text-align: center;
+}
+
+.topNav-fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+.topNav .menu .logo {
+    margin: 20px auto 0 36px;
+    float: left;
+}
+
+/* .topNav .menu .topNav ul li {
     float: left;
 } */
-    .menu .item {
-        height: 17px;
+
+.menu .item {
+    height: 17px;
+    font-size: 12px;
+    float: left;
+    margin-right: 106px;
+    margin-top: 28px;
+    cursor: pointer;
+    color: #50e3c2;
+}
+
+.topNav .menu .item a {
+    color: #50e3c2;
+}
+
+/* todo  滚动页面 */
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.mxs-container .section {
+    width: 100%;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* min-height: 600px; */
+    overflow: hidden;
+    _zoom: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 68px;
+}
+
+.mxs-container .section .container {
+    position: relative;
+    height: 100%;
+    text-align: center
+}
+
+.section-01,
+.section-02,
+.section-03,
+.section-04,
+.section-05,
+    {
+    top: 68px
+}
+
+.mxs-container .section .content {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+/* homepage */
+
+.mxs-container .section-01 {
+    top: 0;
+    right: 0;
+    background: url("../images/homepage/B3208A2C-7538-4756-B94D-C396E24D8E34@1x.png") no-repeat center;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed; */
+}
+
+.section-01 .homePage {
+    position: relative;
+    left: 242px;
+    top: 138px;
+    width: 888px;
+    /* height: 234px; */
+    color: rgb(38, 229, 255);
+    text-align: center;
+    font-family: PingFangSC-Thin;
+}
+
+.section-01 .homePage h1 {
+    color: rgb(38, 229, 255);
+    font-size: 95px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.section-01 .homePage p {
+    color: #373A39;
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    position: relative;
+}
+
+/* CompanyProfile */
+
+section-02 .contentTitle {
+    position: absolute;
+    left: 41px;
+    top: 82px;
+    width: 478px;
+    height: 50px;
+    line-height: 50px;
+    color: #50e3c2;
+    font-size: 36px;
+    text-align: center;
+    font-family: PingFangSC-Thin;
+}
+
+.section-02 .companyContent {
+    position: absolute;
+    left: 4px;
+    bottom: 0;
+    width: 706px;
+    height: 469px;
+    background-color: rgb(10, 10, 10);
+    vertical-align: bottom;
+}
+
+/*  productDescription*/
+
+.section-03 {
+    /* background: #abffff no-repeat; */
+    padding-top: 32px;
+}
+
+.section-03 .wareTitle .fl,
+.section-03 .wareTitle .fr,
+    {
+    width: 237px;
+    height: 60px;
+    line-height: 50px;
+    color: #FF7D7D7D;
+    font-size: 36px;
+    text-align: center;
+    font-family: PingFangSC-Semibold;
+}
+
+.section-03 .wareTitle .fl {
+    margin-left: 84px;
+}
+
+.section-03 .wareTitle .fr {
+    margin-right: 78px;
+}
+
+.section-03 ul {
+    /* width: 104px; */
+    height: 60px;
+    line-height: 50px;
+    /* color: #FF000000; */
+    font-size: 36px;
+    text-align: center;
+    font-family: PingFangSC-Semibold;
+}
+
+.section-03 ul li {
+    float: left;
+}
+
+.section-03 ul li:first-child {
+    margin: 0 623px 0 264px;
+}
+
+.section-03 ul li h3 {
+    display: block;
+}
+
+.section-03 .wareContent {
+    margin-top: 30px;
+    width: 372px;
+    height: 371px;
+    opacity: 0.62;
+    border-radius: 37px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* joinCooperation   */
+
+.section-04 .joinTitle {
+    height: 52px;
+    position: relative;
+    left: 541px;
+    top: 328px;
+    border-radius: 8px;
+    background-color: rgba(255, 9, 255, 1);
+    box-shadow: 4px 5px 10px 0 rgba(93, 93, 93, 0.5);
+    text-align: center;
+    /* vertical-align: center; */
+    padding: 4px 46px 8px 45px;
+}
+
+.section-04 .joinTitle h2 {
+    left: 586px;
+    top: 400px;
+    /* width: 144px; */
+    height: 50px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 36px;
+    font-family: PingFangSC-Medium;
+    /* padding: 4px 46px 8px 45px; */
+}
+
+.section-04 .joinPhone {
+    position: relative;
+    left: 700px;
+    top: 380px;
+    width: 300px;
+    height: 99px;
+    border-left: 3px solid #FF09FF;
+    float: right;
+}
+
+.section-04 .joinPhone p {
+    width: 289px;
+    height: 33px;
+    line-height: 33px;
+    color: #FF2779B1;
+    font-size: 24px;
+    text-align: center;
+    font-family: PingFangSC-Medium;
+}
+
+/* feedBack */
+
+.mxs-container .section-05 {
+    top: 0;
+    right: 0;
+    background: url("../images/feedback.png") no-repeat center;
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: fixed; */
+}
+
+.section-05 .feedBack {
+    margin: 133px 0 0 244px;
+}
+
+.section-05 .feedBack h2 {
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 36px;
+    text-align: left;
+    font-family: PingFangSC-Medium;
+}
+
+.section-05 .feedBack .left,
+.section-05 .feedBack .right {
+    margin-top: 24px;
+    width: 414px;
+    height: 350px;
+    opacity: 0.3;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0);
+}
+
+.section-05 .feedBack .left textarea {
+    height: 100%;
+    width: 100%;
+    /* padding: 10px; */
+    font-size: 16px;
+    color: #fff;
+    font-family: PingFangSC-Medium;
+    text-indent: 40px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 1);
+    outline: none;
+    /* todo  透明度问题 没有解决  */
+}
+
+.section-05 .feedBack .right {
+    background-color: red;
+    margin-left: 44px;
+    padding: 36px 0 0 36px;
+}
+
+.section-05 .feedBack .right .ipt {
+    width: 334px;
+    text-align: left;
+    border-bottom: 1px solid #FFf;
+    margin-top: 26px;
+    color: #FFD2D2D2;
+    .section-05 .feedBack .right .ipt:nth-child(1) {
+        margin-top: 0;
+    }
+    /* input placeholder 样式 */
+    ::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #FFD2D2D2;
         font-size: 12px;
-        float: left;
-        margin-right: 106px;
-        margin-top: 28px;
-        cursor: pointer;
-        color: #50e3c2;
+        height: 17px;
+        line-height: 17px;
     }
-    .topNav .menu .item a {
-        color: #50e3c2;
+    :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #FFD2D2D2;
+        font-size: 12px;
+        height: 17px;
+        line-height: 17px;
     }
-    /* todo  滚动页面 */
-    .container {
-        position: relative;
-        width: 100%;
+    ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #FFD2D2D2;
+        font-size: 12px;
+        height: 17px;
+        line-height: 17px;
+        opacity: 1;
     }
-    .mxs-container .section {
-        width: 100%;
-        position: relative;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        min-height: 600px;
-        overflow: hidden;
-        _zoom: 1;
-        -webkit-font-smoothing: antialiased;
-        margin-top: 68px;
+    :-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #FFD2D2D2 !important;
+        font-size: 12px;
+        height: 17px;
+        line-height: 17px;
     }
-    .mxs-container .section .container {
-        position: relative;
-        height: 100%;
-        text-align: center
+    .feedBack .right .getConnection {
+        background-color: #333333;
+        /* display: inline-block; */
     }
-    .section-01,
-    .section-02,
-    .section-03,
-    .section-04,
-    .section-05,
-        {
-        top: 68px
-    }
-    .mxs-container .section .content {
-        position: absolute;
-        top: 0;
-        left: 0
-    }
-    /* homepage */
-    .mxs-container .section-01 {
-        top: 0;
-        right: 0;
-        /* padding-left: 5%; */
-        background: url("../images/homepage/B3208A2C-7538-4756-B94D-C396E24D8E34@1x.png") no-repeat center;
-        background-size: cover;
-        background-position: center center;
-        /* background-attachment: fixed; */
-    }
-    .section-01 .homePage {
-        position: relative;
-        left: 242px;
-        top: 138px;
-        width: 888px;
-        /* height: 234px; */
-        color: rgb(38, 229, 255);
-        text-align: center;
-        font-family: PingFangSC-Thin;
-    }
-    .section-01 .homePage h1 {
-        color: rgb(38, 229, 255);
-        font-size: 95px;
-        text-align: center;
-        font-weight: normal;
-    }
-    .section-01 .homePage p {
-        color: #373A39;
-        font-size: 16px;
-        height: 22px;
-        line-height: 22px;
-        text-align: center;
-    }
-    /* CompanyProfile */
-    /*  productDescription*/
-    .section-03 {
-        background: #abffff no-repeat;
-    }
-    .section-03 .ware {
-        height: 60px;
-        line-height: 50px;
-        text-align: center;
-        font-family: PingFangSC-Semibold;
-        float: left;
-    }
-    .section-03 .ware li {
-        height: 60px;
-        line-height: 60px;
-        font-weight: 400;
-        color: #FF000000;
-        /* font-size: 36px; */
-        float: left;
-        margin-right: 190px;
-    }
-    .section-03 .ware li :nth-child(2) {
-        font-family: PingFangSC-Light;
-        font-weight: 100;
-    }
-    /* joinCooperation   */
-    .section-04 .joinTitle {
-        height: 52px;
-        position: relative;
-        left: 541px;
-        top: 328px;
-        border-radius: 8px;
-        background-color: rgba(255, 9, 255, 1);
-        box-shadow: 4px 5px 10px 0 rgba(93, 93, 93, 0.5);
-        text-align: center;
-        /* vertical-align: center; */
-        padding: 4px 46px 8px 45px;
-    }
-    .section-04 .joinTitle h2 {
-        left: 586px;
-        top: 400px;
-        /* width: 144px; */
-        height: 50px;
-        line-height: 50px;
+    .feedBack .right .getConnection p {
+        height: 17px;
+        line-height: 17px;
         color: rgba(255, 255, 255, 1);
-        font-size: 36px;
-        font-family: PingFangSC-Medium;
-        /* padding: 4px 46px 8px 45px; */
-    }
-    .section-04 .joinPhone {
-        position: relative;
-        left: 700px;
-        top: 380px;
-        width: 300px;
-        height: 99px;
-        border-left: 3px solid #FF09FF;
-        float: right;
-    }
-    .section-04 .joinPhone p {
-        width: 289px;
-        height: 33px;
-        line-height: 33px;
-        color: #FF2779B1;
-        font-size: 24px;
-        text-align: center;
-        font-family: PingFangSC-Medium;
-    }
-    /* feedBack */
-    .section-05 .feedBack {
-        position: relative;
-        left: 293px;
-        top: 150px;
-        width: 775px;
-        height: 323px;
-        opacity: 0.3;
-        border-radius: 30px;
-        background-color: #FF236CA9;
-        padding: 33px;
-    }
-    .section-05 .feedBack textarea {
-        width: 100%;
-        height: 200px;
-        opacity: 0.11;
-        border: solid 1px #ccc;
-    }
-    .section-05 .feedBack p {
-        height: 28px;
-        line-height: 28px;
-        color: #fff;
-        font-size: 20px;
-        text-align: center;
+        font-size: 12px;
+        text-align: left;
         font-family: PingFangSC-Light;
+    }
+    /* .feedBack .right .getConnection p {} */
+    .feedBack .right .getConnection input {
+        /* background-color: #FF32FFFf; */
+        background-color: black;
+        width: 118px;
+        height: 38px;
     }

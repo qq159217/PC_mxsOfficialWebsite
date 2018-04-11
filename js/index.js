@@ -10,7 +10,7 @@ $(document).ready(function () {
     // loopBottom: true,
     // scrollOverflow: true,
 
-    sectionsColor: ['#ccc', '#4BBFC3', '#aadd', '#f90', '#ccc', '#fff'],
+    // sectionsColor: ['#ccc', '#4BBFC3', '#aadd', '#f90', '#ccc', '#fff'],
     afterLoad: function (anchorLink, index) {
 
     }
