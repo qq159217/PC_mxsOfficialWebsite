@@ -293,7 +293,7 @@ section-02 .contentTitle {
 }
 
 .section-05 .feedBack {
-    /* margin: 133px 0 0 244px; */
+    margin: 133px 0 0 244px;
 }
 
 .section-05 .feedBack h2 {
@@ -348,7 +348,7 @@ section-02 .contentTitle {
     margin-top: 0;
 }
 
-/* input placeholder 样式  */
+/* input placeholder 样式 */
 
 ::-webkit-input-placeholder {
     /* WebKit browsers */
@@ -423,7 +423,7 @@ section-02 .contentTitle {
     position: absolute;
     left: 767px;
     top: 68px;
-    width: auto;
+    width: 599px;
     height: 700px;
     background-color: red;
 }
